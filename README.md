@@ -56,7 +56,7 @@ MANIFESTS_REPO : https://github.com/manojtjacobs/gitops-code
 VOTE_APP_TITLE : Voting Application
 AKS_RESOURCE_GROUP : aks-rg-01
 AKS_NAME :	aks01
-PAT : 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
+PAT : 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
 
 # Create GitHub environment secrets
 
