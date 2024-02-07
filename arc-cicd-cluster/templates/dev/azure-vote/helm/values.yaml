@@ -1,0 +1,4 @@
+title: "Voting Application"
+serviceType: ClusterIP
+imageRepo: mtjacr001/.azurecr.io/
+demoAppUrl: "/"
