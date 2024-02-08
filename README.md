@@ -15,7 +15,7 @@ clusterConfigName="cluster-config"
 gitopsNamespace="cluster-config"
 gitopsRepo="https://github.com/manojtjacobs/gitops-code.git"
 httpsUser="manojtjacobs"
-httpsKey="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"
+httpsKey="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"
 branch="master"
 kustomizationName01="cluster-config"
 
@@ -60,6 +60,7 @@ AKS_RESOURCE_GROUP : aks-rg-01
 AKS_NAME :	aks01
 PAT : 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
 PAT : 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
+PAT : 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
 # Create GitHub environment secrets
 
 #  az-vote-app-dev environment
