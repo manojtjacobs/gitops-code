@@ -15,7 +15,7 @@ clusterConfigName="cluster-config"
 gitopsNamespace="cluster-config"
 gitopsRepo="https://github.com/manojtjacobs/gitops-code.git"
 httpsUser="manojtjacobs"
-httpsKey="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"
+httpsKey="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"
 branch="master"
 kustomizationName01="cluster-config"
 
@@ -24,6 +24,8 @@ gitRepo="gitops-code"
 organization="manojtjacobs"
 
 az k8s-configuration flux create --name $clusterConfigName --cluster-name $clusterName --namespace $gitopsNamespace --resource-group $clusterRGName -u $gitopsRepo --https-user $httpsUser --https-key $httpsKey --scope cluster --cluster-type managedClusters --branch $branch --kustomization name=$kustomizationName01 prune=true path=arc-cicd-cluster/manifests
+
+az k8s-configuration flux update --name $clusterConfigName --cluster-name $clusterName --resource-group $clusterRGName -u $gitopsRepo --https-user $httpsUser --https-key $httpsKey --cluster-type managedClusters --branch $branch --kustomization name=$kustomizationName01 prune=true path=arc-cicd-cluster/manifests
 
 az k8s-configuration flux show -g $clusterRGName -c $clusterName -n $clusterConfigName -t managedClusters
 
@@ -57,7 +59,7 @@ VOTE_APP_TITLE : Voting Application
 AKS_RESOURCE_GROUP : aks-rg-01
 AKS_NAME :	aks01
 PAT : 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
-
+PAT : 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
 # Create GitHub environment secrets
 
 #  az-vote-app-dev environment
