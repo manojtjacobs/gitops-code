@@ -8,6 +8,8 @@ Please see the tutorial at <https://docs.microsoft.com/azure/azure-arc/kubernete
 
 https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd#implement-cicd-with-github
 
+## variables
+
 azureContainerRegistry="mtjacr001"
 clusterName="aks01"
 clusterRGName="aks-rg-01"
