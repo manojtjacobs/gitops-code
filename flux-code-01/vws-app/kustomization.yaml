@@ -1,0 +1,10 @@
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: vws-app
+resources:
+  - vws-app-namespace.yaml
+  - vws-app-deployment.yaml
+  - vws-app-service.yaml
+  - vws-app-hpa.yaml
+  - vws-app-ingress.yaml
